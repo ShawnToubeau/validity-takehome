@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "Validity-takehome",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +6,7 @@
   "scripts": {
     "client": "cd client && npm start",
     "server": "cd server && npm start",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
@@ -16,29 +16,4 @@
     "concurrently": "^4.1.0",
     "fast-csv": "^2.4.1"
   }
-=======
-  "name": "validity-takehome",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
->>>>>>> f635e5c1d1a8145076f84949cac5f06e49f7e92f
 }
