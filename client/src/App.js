@@ -7,7 +7,7 @@ class App extends Component {
   state = { records: [] }
 
   async componentDidMount() {
-    const response = await fetch('/records')
+    const response = await fetch('/records');
 
     const json = await response.json();
     this.setState({ records: json });
@@ -58,8 +58,14 @@ class App extends Component {
     return (
       <div>
         <h1>Validity Take-home</h1>
-        <ReactTable
-          data={this.state.records}
+        <h2>Duplicates</h2>
+        <ReactTable // table of duplicates
+          data={this.state.records.duplicates}
+          columns={columns}
+        />
+        <h2>Originals</h2>
+        <ReactTable // table of originals
+          data={this.state.records.originals}
           columns={columns}
         />
       </div>
