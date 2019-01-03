@@ -1,4 +1,22 @@
 {
+<<<<<<< HEAD
+  "name": "Validity-takehome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "fast-csv": "^2.4.1"
+  }
+=======
   "name": "validity-takehome",
   "version": "0.1.0",
   "private": true,
@@ -22,4 +40,5 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+>>>>>>> f635e5c1d1a8145076f84949cac5f06e49f7e92f
 }
